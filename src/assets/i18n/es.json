@@ -1,0 +1,14 @@
+{
+  "title": "Auth-Demo",
+  "login":{
+    "username" : "Usuario",
+    "password" : "Contraseña",
+    "button" : "LOGIN"
+  },
+  "test": "test funciona!",
+
+  "error":{
+    "authError": "Error en la autenticación",
+    "authErrorClose": "Cerrar"
+  }
+}

@@ -17,7 +17,7 @@ export class AuthService {
   login(username: string, password: string): boolean {
     if (username === 'admin' && password === 'admin') {
       const authToken = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpheWRlZXAgUGF0aWwiLCJpYXQiOjE1MTYyMzkwMjJ9.yt3EOXf60R62Mef2oFpbFh2ihkP5qZ4fM8bjVnF8YhA';
-      localStorage.setItem(this.authSecretKey, authToken);
+      localStorage!.setItem(this.authSecretKey, authToken);
       this.isAuthenticated = true;
       return true;
     } else {
@@ -30,7 +30,7 @@ export class AuthService {
   }
 
   logout(): void {
-    localStorage.removeItem(this.authSecretKey);
+    localStorage!.removeItem(this.authSecretKey);
     this.isAuthenticated = false;
   }
 }

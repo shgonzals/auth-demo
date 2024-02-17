@@ -2,14 +2,14 @@
   <mat-card-content style="width: 30%;">
     <form style="display: grid;">
       <mat-form-field >
-        <mat-label>Username</mat-label>
+        <mat-label>{{ 'login.username' | translate }}</mat-label>
         <input matInput [(ngModel)]="username" [ngModelOptions]="{standalone: true}">
       </mat-form-field>
       <mat-form-field >
-        <mat-label>Password</mat-label>
+        <mat-label>{{ 'login.password' | translate }}</mat-label>
         <input type="password" matInput [(ngModel)]="password" [ngModelOptions]="{standalone: true}">
       </mat-form-field>
-      <button [disabled]="loading" mat-raised-button color="primary" (click)="onClick()">LOGIN</button>
+      <button [disabled]="loading" mat-raised-button color="primary" (click)="onClick()">{{ 'login.button' | translate }}</button>
     </form>
   </mat-card-content>
 </mat-card>
